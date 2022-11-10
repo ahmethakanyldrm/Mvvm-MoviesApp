@@ -15,6 +15,8 @@
 		1C3DF66C291987B300531A2E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DF66B291987B300531A2E /* NetworkManager.swift */; };
 		1CB0FE66291C3A1700C63BAF /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0FE65291C3A1700C63BAF /* Movie.swift */; };
 		1CB0FE68291C3DFA00C63BAF /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0FE67291C3DFA00C63BAF /* MovieService.swift */; };
+		1CD47631291CFCA50054CA61 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD47630291CFCA50054CA61 /* APIURLs.swift */; };
+		1CD47633291CFD730054CA61 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD47632291CFD730054CA61 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1C3DF66B291987B300531A2E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1CB0FE65291C3A1700C63BAF /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1CB0FE67291C3DFA00C63BAF /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		1CD47630291CFCA50054CA61 /* APIURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
+		1CD47632291CFD730054CA61 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				1C3DF66B291987B300531A2E /* NetworkManager.swift */,
+				1CD47630291CFCA50054CA61 /* APIURLs.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1C3DF669291986BB00531A2E /* HomeScreen.swift */,
+				1CD47632291CFD730054CA61 /* HomeViewModel.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 				1CB0FE68291C3DFA00C63BAF /* MovieService.swift in Sources */,
 				1C3DF66C291987B300531A2E /* NetworkManager.swift in Sources */,
 				1C3DF6502919835F00531A2E /* AppDelegate.swift in Sources */,
+				1CD47633291CFD730054CA61 /* HomeViewModel.swift in Sources */,
 				1C3DF6522919835F00531A2E /* SceneDelegate.swift in Sources */,
+				1CD47631291CFCA50054CA61 /* APIURLs.swift in Sources */,
 				1C3DF66A291986BB00531A2E /* HomeScreen.swift in Sources */,
 				1CB0FE66291C3A1700C63BAF /* Movie.swift in Sources */,
 			);

@@ -12,7 +12,7 @@ class MovieService {
     // indirme işlemini vs yapacak
     
     func downloadMovies(completion: @escaping ([MovieResult]?)-> ()) {
-        guard let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=apikey&language=en-US&page=1") else {return}
+        guard let url = URL(string: APIURLs.movies(page: 1)) else {return}
         // weak self memory leak olmaması için kullanılması gerekli
         NetworkManager.shared.download(url: url) { [weak self] result in
             guard let self = self else {return}
