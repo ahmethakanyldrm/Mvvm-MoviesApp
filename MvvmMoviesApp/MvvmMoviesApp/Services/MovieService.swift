@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MovieService {
+final class MovieService {
     // NetworkManager la iletişimde olacak
     // indirme işlemini vs yapacak
     

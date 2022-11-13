@@ -27,11 +27,13 @@ class NetworkManager {
             }
             guard
                 let data = data else {
-                
                 completion(.failure(URLError(.badURL)))
                 return
             }
             completion(.success(data))
-        }
+            
+        }.resume()
+        
+        
     }
 }
