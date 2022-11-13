@@ -17,6 +17,10 @@
 		1CB0FE68291C3DFA00C63BAF /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0FE67291C3DFA00C63BAF /* MovieService.swift */; };
 		1CD47631291CFCA50054CA61 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD47630291CFCA50054CA61 /* APIURLs.swift */; };
 		1CD47633291CFD730054CA61 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD47632291CFD730054CA61 /* HomeViewModel.swift */; };
+		1CD47636291D053C0054CA61 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD47635291D053C0054CA61 /* UIView+Ext.swift */; };
+		1CD47638291D08080054CA61 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD47637291D08080054CA61 /* UIHelper.swift */; };
+		1CD4763A291D09600054CA61 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD47639291D09600054CA61 /* CGFloat+Ext.swift */; };
+		1CD4763C291D0B810054CA61 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD4763B291D0B810054CA61 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		1CB0FE67291C3DFA00C63BAF /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		1CD47630291CFCA50054CA61 /* APIURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
 		1CD47632291CFD730054CA61 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1CD47635291D053C0054CA61 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		1CD47637291D08080054CA61 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		1CD47639291D09600054CA61 /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
+		1CD4763B291D0B810054CA61 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 		1C3DF64E2919835F00531A2E /* MvvmMoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				1CD47634291D05230054CA61 /* Extensions */,
 				1C3DF6632919859900531A2E /* Utilities */,
 				1C3DF665291985C700531A2E /* Models */,
 				1C3DF664291985B200531A2E /* Services */,
@@ -82,6 +91,7 @@
 			children = (
 				1C3DF66B291987B300531A2E /* NetworkManager.swift */,
 				1CD47630291CFCA50054CA61 /* APIURLs.swift */,
+				1CD47637291D08080054CA61 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -114,6 +124,7 @@
 		1C3DF667291985F500531A2E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1CD4763B291D0B810054CA61 /* MovieCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -125,6 +136,15 @@
 				1CD47632291CFD730054CA61 /* HomeViewModel.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		1CD47634291D05230054CA61 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CD47635291D053C0054CA61 /* UIView+Ext.swift */,
+				1CD47639291D09600054CA61 /* CGFloat+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +219,13 @@
 			files = (
 				1CB0FE68291C3DFA00C63BAF /* MovieService.swift in Sources */,
 				1C3DF66C291987B300531A2E /* NetworkManager.swift in Sources */,
+				1CD4763C291D0B810054CA61 /* MovieCell.swift in Sources */,
 				1C3DF6502919835F00531A2E /* AppDelegate.swift in Sources */,
+				1CD4763A291D09600054CA61 /* CGFloat+Ext.swift in Sources */,
+				1CD47638291D08080054CA61 /* UIHelper.swift in Sources */,
 				1CD47633291CFD730054CA61 /* HomeViewModel.swift in Sources */,
 				1C3DF6522919835F00531A2E /* SceneDelegate.swift in Sources */,
+				1CD47636291D053C0054CA61 /* UIView+Ext.swift in Sources */,
 				1CD47631291CFCA50054CA61 /* APIURLs.swift in Sources */,
 				1C3DF66A291986BB00531A2E /* HomeScreen.swift in Sources */,
 				1CB0FE66291C3A1700C63BAF /* Movie.swift in Sources */,

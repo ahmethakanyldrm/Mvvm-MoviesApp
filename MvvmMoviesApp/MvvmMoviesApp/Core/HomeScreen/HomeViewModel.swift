@@ -22,6 +22,6 @@ extension HomeViewModel: HomeViewModelInterface {
 
     func viewDidLoad() {
         view?.configureVC()
-        
+        view?.configureCollectionView()
     }
 }
