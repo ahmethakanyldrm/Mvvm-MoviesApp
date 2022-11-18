@@ -11,8 +11,8 @@ final class MovieService {
     // NetworkManager la iletişimde olacak
     // indirme işlemini vs yapacak
     
-    func downloadMovies(completion: @escaping ([MovieResult]?)-> ()) {
-        guard let url = URL(string: APIURLs.movies(page: 1)) else {return}
+    func downloadMovies(page: Int, completion: @escaping ([MovieResult]?)-> ()) {
+        guard let url = URL(string: APIURLs.movies(page: page)) else {return}
         // weak self memory leak olmaması için kullanılması gerekli
         NetworkManager.shared.download(url: url) { [weak self] result in
             guard let self = self else {return}
@@ -23,6 +23,23 @@ final class MovieService {
             case .failure(let error):
                 self.handleWithError(error)
             }
+        }
+    }
+    
+    func downloadDetail(id:Int, completion: @escaping (MovieResult?)-> ()){
+        
+        guard let url = URL(string: APIURLs.detail(id: id)) else {return}
+        NetworkManager.shared.download(url: url) { [weak self] result in
+            
+            guard let self = self else {return}
+            
+            switch result {
+            case .success(let data):
+                break
+            case .failure(let error):
+                self.handleWithError(error)
+            }
+            
         }
     }
     
